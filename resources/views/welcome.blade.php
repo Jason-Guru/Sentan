@@ -20,7 +20,7 @@
               <div class="container">
                 <div class="navbar-brand">
                   <a class="navbar-item">
-                    <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                    <img src="{{asset('/images/logonew.png')}}" alt="Logo">
                   </a>
                   <span class="navbar-burger burger" data-target="navbarMenuHeroB">
                     <span></span>
@@ -45,7 +45,7 @@
                         <span class="icon">
                           <i class="fas fa-user-tie"></i>
                         </span>
-                        <span>Login/Register for job seekers</span>
+                        <span>Login/Register as job seekers</span>
                       </a>
                     </span>
                     <span class="navbar-item">
@@ -72,89 +72,148 @@
               </p>
               <div style="margin-top:10px;">
                   <a class="button is-warning"><span class="icon">
-                      <i class="fas  fa-building"></i>
+                      <i class="fas fa-paper-plane"></i>
                     </span><span>Post Jobs</span></a>
                   <a class="button is-warning"><span class="icon">
-                      <i class="fas  fa-building"></i>
+                      <i class="fas  fa-search"></i>
                     </span><span>Find Jobs</span></a>
               </div>
             </div>
           </div>
-        
-          {{-- <div class="hero-foot">
-            <nav class="tabs is-boxed is-fullwidth">
-              <div class="container">
-                <ul>
-                  <li class="is-active">
-                    <a>Overview</a>
-                  </li>
-                  <li>
-                    <a>Modifiers</a>
-                  </li>
-                  <li>
-                    <a>Grid</a>
-                  </li>
-                  <li>
-                    <a>Elements</a>
-                  </li>
-                  <li>
-                    <a>Components</a>
-                  </li>
-                  <li>
-                    <a>Layout</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div> --}}
         </section>
+        <div class=" has-background-warning" id="optin">
+          <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-3 is-offset-4 has-text-centered-mobile has-text-right-tablet"><p><strong>Subscribe! to Latest job Alerts</strong></p></div>
+            <div class="column is-2 has-text-centered-mobile"><a href="" class="button is-info">Subscribe</a></div>
+          </div>
+        </div>
+          
+          
+        </div>
         <section class="section">
           <div class="container">
             <div class="columns">
-              <div class="column is-one-third">
-
-                <div class="tile is-ancestor">
-                  <div class="tile is-12">
-                    <div class="tile is-parent is-vertical">
-                      <article class="tile is-child notification">
-                        <p class="title">Filter</p>
-                        <p class="subtitle">Search by Category</p>
-                      </article>
-                    </div>
+              <div class="column is-3">
+                <div class="panel">
+                  <p class="panel-heading has-background-info has-text-light">Category Filter</p>
+                  
+                  <div class="panel-block">
+                    <p class="control has-icons-left">
+                      <input class="input is-small" type="text" placeholder="search">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                      </span>
+                    </p>
                   </div>
+                  <div class="panel-tabs">
+                      <a class="is-active">all</a>
+                      <a>popular</a>
+                      <a>featured</a>
+                  </div>
+                  <a class="panel-block is-active">
+                    <span class="panel-icon">
+                      <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    driver
+                  </a>
+                  <a class="panel-block">
+                    <span class="panel-icon">
+                      <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    developer
+                  </a>
                 </div>
 
               </div>
               <div class="column">
-                  <article class="message is-dark">
-                      <div class="message-header">
-                        <p>Reccent Hot Jobs</p>
+                <p class="title is-4">Recent Hot Jobs</p>
+                <p class="subtitle">List of all recent jobs in Manipur</p>
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="https://bulma.io/images/placeholders/128x128.png">
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                          <br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                        </p>
                       </div>
-                      <div class="message-body">
-                        <div class="content">
-                          <p class="title">Job Title</p>
-                          <p class="subtitle">Job Location</p>
-                          <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
-                          </p>
-                          <a href="" class="button is-success">Apply Now</a>
+                      <nav class="level is-mobile">
+                        <div class="level-left">
+                          <a class="level-item">
+                            <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                          </a>
+                          <a class="level-item">
+                            <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                          </a>
+                          <a class="level-item">
+                            <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                          </a>
                         </div>
-                        <hr>
+                      </nav>
+                    </div>
+                    <div class="media-right">
+                      <button class="delete"></button>
+                    </div>
+                  </article>
+
+                  <article class="media">
+                      <figure class="media-left">
+                        <p class="image is-64x64">
+                          <img src="https://bulma.io/images/placeholders/128x128.png">
+                        </p>
+                      </figure>
+                      <div class="media-content">
                         <div class="content">
-                            <p class="title">Job Title</p>
-                            <p class="subtitle">Job Location</p>
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
-                            </p>
-                            <a href="" class="button is-success">Apply Now</a>
+                          <p>
+                            <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                          </p>
+                        </div>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item">
+                              <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                            </a>
+                            <a class="level-item">
+                              <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                            </a>
+                            <a class="level-item">
+                              <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                            </a>
                           </div>
+                        </nav>
+                      </div>
+                      <div class="media-right">
+                        <button class="delete"></button>
                       </div>
                     </article>
+              </div>
+              <div class="column is-3">
+                <p class="title is-4">Sentan Loushing</p>
+                <p class="subtitle">Learn to make money</p>
               </div>
             </div>
           </div>
         </section>
-
+        <section class="hero is-dark">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                  “There is no passion to be found playing small—in settling for a life that is less than the one you are capable of living.” 
+              </h1>
+              <h2 class="subtitle">
+                  <em>—Nelson Mandela</em>
+              </h2>
+            </div>
+          </div>
+        </section>
         <footer class="footer has-background-grey-lighter">
           <div class="container">
             <div class="content has-text-centered">
