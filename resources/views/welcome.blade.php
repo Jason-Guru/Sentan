@@ -5,175 +5,167 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Sentan</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
         <link rel="stylesheet" href="{{asset('css/libs.css')}}">
-        {{-- <link rel="stylesheet" href="{{asset('css/app.css')}}"> --}}
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
     <body>
-            <section class="hero is-info is-large" id="app2">
-                    <div class="hero-head">
-                      <nav class="navbar">
-                        <div class="container">
-                          <div class="navbar-brand">
-                            <a class="navbar-item">
-                              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-                            </a>
-                            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </span>
-                          </div>
-                          <div id="navbarMenuHeroB" class="navbar-menu">
-                            <div class="navbar-end">
-                              <a class="navbar-item is-active">
-                                @{{title}}
-                              </a>
-                              <a class="navbar-item">
-                                Examples
-                              </a>
-                              <a class="navbar-item">
-                                Documentation
-                              </a>
-                              <span class="navbar-item">
-                                <a class="button is-info is-inverted">
-                                  <span class="icon">
-                                    <i class="fab fa-github"></i>
-                                  </span>
-                                  <span>Download</span>
-                                </a>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </nav>
-                    </div>
-                  
-                    <div class="hero-body">
-                      <div class="container has-text-centered">
-                        <p class="title">
-                          Title
-                        </p>
-                        <p class="subtitle">
-                          Subtitle
-                        </p>
-                      </div>
-                    </div>
-                  
-                    <div class="hero-foot">
-                      <nav class="tabs is-boxed is-fullwidth">
-                        <div class="container">
-                          <ul>
-                            <li class="is-active">
-                              <a>Overview</a>
-                            </li>
-                            <li>
-                              <a>Modifiers</a>
-                            </li>
-                            <li>
-                              <a>Grid</a>
-                            </li>
-                            <li>
-                              <a>Elements</a>
-                            </li>
-                            <li>
-                              <a>Components</a>
-                            </li>
-                            <li>
-                              <a>Layout</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </nav>
-                    </div>
-                  </section>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
+    <div id="app">
+      <section class="hero is-info is-medium is-bold">
+          <div class="hero-head">
+            <nav class="navbar">
+              <div class="container">
+                <div class="navbar-brand">
+                  <a class="navbar-item">
+                    <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                  </a>
+                  <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    <div class="row">
-                    <div class="col-md-6"></div>
-                        <div class="col-md-6">
-                                Laravel
+                {{-- @if (Route::has('login'))
+                        <div class="top-right links">
+                            @auth
+                                <a href="{{ url('/home') }}">Home</a>
+                            @else
+                                <a href="{{ route('login') }}">Login</a>
+                                <a href="{{ route('register') }}">Register</a>
+                            @endauth
                         </div>
-                    </div>
+                    @endif --}}
+                <div id="navbarMenuHeroB" class="navbar-menu">
+                  <div class="navbar-end">
+                    <span class="navbar-item">
+                      <a class="button is-info is-inverted">
+                        <span class="icon">
+                          <i class="fas fa-user-tie"></i>
+                        </span>
+                        <span>Login/Register for job seekers</span>
+                      </a>
+                    </span>
+                    <span class="navbar-item">
+                      <a class="button is-info is-inverted">
+                        <span class="icon">
+                          <i class="fas  fa-building"></i>
+                        </span>
+                        <span>Employer's Zone</span>
+                      </a>
+                    </span>
+                  </div>
                 </div>
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+              </div>
+            </nav>
+          </div>
+        
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <h1 class="title">
+                Manipur's Ultimate Online Job Portal
+              </h1>
+              <p>
+                This job portal is totally free. Made with the intention to eliminate unemployment in Manipur, by connecting the employer with the job seeker.
+              </p>
+              <div style="margin-top:10px;">
+                  <a class="button is-warning"><span class="icon">
+                      <i class="fas  fa-building"></i>
+                    </span><span>Post Jobs</span></a>
+                  <a class="button is-warning"><span class="icon">
+                      <i class="fas  fa-building"></i>
+                    </span><span>Find Jobs</span></a>
+              </div>
             </div>
-        </div>
+          </div>
+        
+          {{-- <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+              <div class="container">
+                <ul>
+                  <li class="is-active">
+                    <a>Overview</a>
+                  </li>
+                  <li>
+                    <a>Modifiers</a>
+                  </li>
+                  <li>
+                    <a>Grid</a>
+                  </li>
+                  <li>
+                    <a>Elements</a>
+                  </li>
+                  <li>
+                    <a>Components</a>
+                  </li>
+                  <li>
+                    <a>Layout</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div> --}}
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-one-third">
+
+                <div class="tile is-ancestor">
+                  <div class="tile is-12">
+                    <div class="tile is-parent is-vertical">
+                      <article class="tile is-child notification">
+                        <p class="title">Filter</p>
+                        <p class="subtitle">Search by Category</p>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="column">
+                  <article class="message is-dark">
+                      <div class="message-header">
+                        <p>Reccent Hot Jobs</p>
+                      </div>
+                      <div class="message-body">
+                        <div class="content">
+                          <p class="title">Job Title</p>
+                          <p class="subtitle">Job Location</p>
+                          <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+                          </p>
+                          <a href="" class="button is-success">Apply Now</a>
+                        </div>
+                        <hr>
+                        <div class="content">
+                            <p class="title">Job Title</p>
+                            <p class="subtitle">Job Location</p>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+                            </p>
+                            <a href="" class="button is-success">Apply Now</a>
+                          </div>
+                      </div>
+                    </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer has-background-grey-lighter">
+          <div class="container">
+            <div class="content has-text-centered">
+              <p>
+                  <strong>Sentan</strong> was born from a passion to deliver easy &amp; cost-effective job solution for private &amp; government jobs sector in Manipur. Our mission is to bridge the gap between job seekers &amp; employers by connecting skill with opportunity. All text &amp; design is copyright © 2017 All Rights Reserved. Sentan™ &amp; Logo are registered trademark of OxMonk Professionals.
+              </p>
+            </div>
+          </div>
+        </footer>
+          
+      </div>
         <script src="{{asset('js/libs.js')}}"></script>
     </body>
 </html>

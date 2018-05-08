@@ -19,9 +19,8 @@ Vue.use('bulma');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
 const app2 = new Vue({
-    el: '#app2',
+    el: '#app',
     data: {
         title: "HomeWork",
     }
