@@ -68,7 +68,7 @@
                 Manipur's Ultimate Online Job Portal
               </h1>
               <p>
-                This job portal is totally free. Made with the intention to eliminate unemployment in Manipur, by connecting the employer with the job seeker.
+                Create your profile for free. Prove that you are the best! Build an online presence in Manipur.
               </p>
               <div style="margin-top:10px;">
                   <a class="button is-warning"><span class="icon">
@@ -83,13 +83,11 @@
         </section>
         <div class=" has-background-warning" id="optin">
           <div class="container">
-          <div class="columns is-vcentered">
-            <div class="column is-3 is-offset-4 has-text-centered-mobile has-text-right-tablet"><p><strong>Subscribe! to Latest job Alerts</strong></p></div>
-            <div class="column is-2 has-text-centered-mobile"><a href="" class="button is-info">Subscribe</a></div>
+            <div class="columns is-vcentered">
+              <div class="column is-3 is-offset-4 has-text-centered-mobile has-text-right-tablet"><p><strong>Subscribe! to Latest job Alerts</strong></p></div>
+              <div class="column is-2 has-text-centered-mobile"><a href="" class="button is-info">Subscribe</a></div>
+            </div>
           </div>
-        </div>
-          
-          
         </div>
         <section class="section">
           <div class="container">
@@ -97,7 +95,6 @@
               <div class="column is-3">
                 <div class="panel">
                   <p class="panel-heading has-background-info has-text-light">Category Filter</p>
-                  
                   <div class="panel-block">
                     <p class="control has-icons-left">
                       <input class="input is-small" type="text" placeholder="search">
@@ -124,12 +121,11 @@
                     developer
                   </a>
                 </div>
-
               </div>
               <div class="column">
                 <p class="title is-4">Recent Hot Jobs</p>
                 <p class="subtitle">List of all recent jobs in Manipur</p>
-                  <article class="media">
+                  <article class="media box">
                     <figure class="media-left">
                       <p class="image is-64x64">
                         <img src="https://bulma.io/images/placeholders/128x128.png">
@@ -162,7 +158,7 @@
                     </div>
                   </article>
 
-                  <article class="media">
+                  <article class="media box">
                       <figure class="media-left">
                         <p class="image is-64x64">
                           <img src="https://bulma.io/images/placeholders/128x128.png">
@@ -196,8 +192,22 @@
                     </article>
               </div>
               <div class="column is-3">
-                <p class="title is-4">Sentan Loushing</p>
-                <p class="subtitle">Learn to make money</p>
+                  <p class="title is-4"><a href="">Sentan Online School</a></p>
+                  <p class="subtitle">Learn to make money online!</p>
+                  <div class="tile is-ancestor">
+                    <div class="tile is-parent is-vertical">
+                      <div class="tile is-child box">
+                        <p class="subtitle is-6">Available Courses</p>
+                        <div class="content">
+                          <ul>
+                            <li>Become eCommerce Seller</li>
+                            <li>Start Freelancing</li>
+                            <li>Affiliate Marketing</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -205,15 +215,56 @@
         <section class="hero is-dark">
           <div class="hero-body">
             <div class="container">
-              <h1 class="title">
+              <h1 class="title is-size-4-mobile">
                   “There is no passion to be found playing small—in settling for a life that is less than the one you are capable of living.” 
               </h1>
-              <h2 class="subtitle">
+              <h2 class="subtitle is-size-6-mobile">
                   <em>—Nelson Mandela</em>
               </h2>
             </div>
           </div>
         </section>
+        {{-- How it works section --}}
+        <section class="section">
+          <div class="container">
+            <p class="title is-4 has-text-centered">Getting Started</p>
+            <p class="subtitle has-text-centered">Start building your career hassle free!</p>
+            
+            <div class="columns">
+              <div class="column">
+                  <div class="notification">
+                    <div class="level">
+                      <div class="level-left">
+                        <div class="level-item">
+                          <p class="subtitle">Looking for job?</p>
+                        </div>
+                        <div class="level-item">
+                          <a href="" class="button is-info">Start here</a>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Sign up for a job seeker's account, and from there you can apply for any number of jobs that are available in this platform which suits your qualification and experience.</p>
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="notification">
+                    <div class="level">
+                      <div class="level-left">
+                        <div class="level-item">
+                          <p class="subtitle is-5">Looking to hire?</p>
+                        </div>
+                        <div class="level-item">
+                          <a href="" class="button is-info">Start here</a>
+                        </div>
+                      </div>
+                    </div>{{-- /level --}}
+                    <p>Create your employers profile and start posting jobs. Once posted eligible job seeker will apply according to your job description.</p>
+                  </div>{{-- /notification --}}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <footer class="footer has-background-grey-lighter">
           <div class="container">
             <div class="content has-text-centered">
@@ -223,6 +274,13 @@
             </div>
           </div>
         </footer>
+        <div class="has-background-dark has-text-centered has-text-warning">
+          <div class="columns">
+            <div class="column">
+              <p>Web Application Designed, Developed and Maintained by <a class="has-text-white" href="http://jasonguru.com"><strong>Jason Guru</strong></a></p>
+            </div>
+          </div>
+        </div>
           
       </div>
         <script src="{{asset('js/libs.js')}}"></script>
